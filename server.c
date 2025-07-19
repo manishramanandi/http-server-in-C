@@ -49,9 +49,12 @@ int main(void) {
     printf("listen succesfull\n");
     printf("Suckless code\n");
 
+    for (;;){
     printf("waiting for connection\n");
     client_socket = accept(tcp_socket, NULL, NULL);
     printf("got a connection\n");
+
+    };
 
 exit:
     close(tcp_socket);
